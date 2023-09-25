@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Walking Dead - Netflix</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo-letra.png" type="image/x-icon">
+    <!-- Fuente del texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+<body>
+    <main>
+        <header>
+            <a href="#" class="logo"><img src="img/logo.png" alt="logo Netflix"></a>
+            <a href="#" class="menu1" id="menu1">Menú<img src="img/header/arrow-down.png" id="arrow1"></a>
+            <div class="pop-up1" id="pop-up1">
+                <a href="#">Inicio</a>
+                <a href="#">Series</a>
+                <a href="#">Peliculas</a>
+                <a href="#">Popular</a>
+                <a href="#">Mi lista</a>
+            </div>           
+            <ul class="navigation">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">Peliculas</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Mi lista</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="navigation-2">
+                <a href="#"><img src="img/header/search.png" alt=""></a>
+                <a href="#"><img src="img/header/bell.png" id="bell"></a>
+                <a href="#" id="usuario"><img src="img/header/foto_perfil.png" id="img-usuario"></a>          
+                <a href="#" id="menu2"><img src="img/header/arrow-down.png"id="arrow2"></a>         
+            </div>
+            
+            <div class="pop-up2" id="pop-up2">
+                <div>
+                    <a href="#"><img src="img/header/menu/fotoPerfil1.png"></a>
+                    <a href="#">Juan Carlos</a>
+                </div>
+    
+                <div>
+                    <a href="#"><img src="img/header/menu/fotoPerfil2.png"></a>
+                    <a href="#">Roberto</a>   
+                </div>
+    
+                <div>
+                    <a href="#"><img src="img/header/menu/fotoPerfil3.png"></a>
+                    <a href="#">Andrés</a>
+                </div>
+    
+                <div>
+                    <a href="#"><img src="img/header/menu/pencil.png"></a>
+                    <a href="#">Administrar perfiles</a>
+                </div>
+    
+                <div>
+                    <a href="#"><img src="img/header/menu/transfer.png"></a>
+                    <a href="#">Transferir perfil</a>   
+                </div>
+    
+                <div>
+                    <a href="#"><img src="img/header/menu/account.png"></a>
+                    <a href="#">Cuenta</a>
+                </div>
+    
+                <div>
+                    <a href="#"><img src="img/header/menu/help.png"></a>
+                    <a href="#">Centro de ayuda</a>
+                </div>
+                   
+                <hr>
+                <a href="#" class="cerrar-sesion">Cerrar sesión en Netflix</a>
+    
+            </div> 
+        </header>                         
+        <section class="banner">
+            <img src="img/fondo.webp" alt="fondo" class="bg">
+            <span class="sombreImg"></span>
+            <div class="content">
+                <img src="img/logo_letras.webp" alt="logo_TWD" class="movieTittle">
+                    
+                <p>En el despertar del apocalipsis zombi, los supervivientes se aferran a
+                    la esperanza de la humanidad y se unen para librar una batalla por su
+                    propia supervivencia.
+                </p>
+
+                <div class="play-info">
+                    <div class="play" onclick="toggleVideo()">
+                        <img src="img/play.png" alt="play">        
+                        <a href="#">Reproducir</a>
+                    </div>
+                    <div class="info">
+                        <img src="img/info.png" alt="" width="20px">                   
+                        <a href="#" onclick="">Más información</a>
+                    </div>
+                </div>
+            </div>               
+        </section>
+        <section class="trailer">
+            <video src="img/trailer/Trailer TWD.mp4" controls="true"></video>
+            <img src="img/close.png" class="close" onclick="toggleVideo()">
+        </section>             
+    </main>
+    <script src="script.js"></script>  
+</body>
+</html>
